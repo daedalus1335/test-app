@@ -1,0 +1,22 @@
+{
+  "name": "testapp",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "daedalus1335 <unconfigured@null.spigotmc.org>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/daedalus1335/test-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
+}
