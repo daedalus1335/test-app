@@ -70,8 +70,8 @@
             var playerDiv = document.getElementById("random_player");
             var player = document.createElement("IFRAME");
             var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
-            player.setAttribute('width', '640');
-            player.setAttribute('height', '390');
+            player.setAttribute('width', '100');
+            player.setAttribute('height', '60');
             player.setAttribute('src', randomVideoUrl);
             playerDiv.appendChild(player);
         };
