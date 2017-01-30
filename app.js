@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/', function (req, res) {
-  res.send('Got a POST request')
+  res.render('posts-index', posts)
 })
 
 app.listen(process.env.PORT || 3000);
