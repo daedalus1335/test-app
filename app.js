@@ -14,4 +14,8 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
+app.post('/', function (req, res) {
+  res.send('Got a POST request')
+})
+
 app.listen(process.env.PORT || 3000);
