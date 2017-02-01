@@ -1,11 +1,11 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
-var post = require('../models/post.js');
+var Post = require('../models/post.js');
 
 var app = express();
 
 //MIDDLEWARE
-app.engine('handlebars', exphbs({defaultLayout: 'posts-index'}));
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {
