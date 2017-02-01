@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/', function (req, res) {
-  res.render('posts-index')
+  res.render('posts-index', post)
 })
 
 [
