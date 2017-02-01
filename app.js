@@ -5,7 +5,7 @@ var exphbs  = require('express-handlebars');
 var app = express();
 
 //MIDDLEWARE
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.engine('handlebars', exphbs({defaultLayout: 'posts-index'}));
 app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res) {
