@@ -16,10 +16,4 @@ app.get('/posts', function (req, res) {
     res.render('posts-index', posts);
 });
 
-[
-    {body: "randomThings"},
-    {body: "otherStuff"},
-    {body: "otherRandomStuff"}
-]
-
 app.listen(process.env.PORT || 3000);
