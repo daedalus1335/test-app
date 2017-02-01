@@ -1,6 +1,6 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
-var post = require('../testapp/models/post.js');
+var Post = require('../testapp/models/post.js');
 
 var app = express();
 
@@ -13,7 +13,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/posts', function (req, res) {
-    res.render('posts-index', posts);
+    Post.find(function(err, posts){
+        res.render('posts-index', posts);
+    })
+
+
 });
 
 app.listen(process.env.PORT || 3000);
