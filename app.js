@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.posts('/', function (req, res) {
+app.get('/', function (req, res) {
   res.render('posts-index', posts)
 })
 
