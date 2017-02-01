@@ -1,5 +1,6 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
+var Post = require('/testapp/models/post.js');
 
 var app = express();
 
@@ -11,7 +12,7 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.post('/', function (req, res) {
+app.posts('/', function (req, res) {
   res.render('posts-index', posts)
 })
 
