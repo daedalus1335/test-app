@@ -13,8 +13,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/posts', function (req, res) {
-    res.render('posts-index', posts)
-})
+    res.render('posts-index', posts);
+});
 
 [
     {body: "randomThings"},
