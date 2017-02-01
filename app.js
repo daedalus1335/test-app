@@ -12,8 +12,8 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.get('/post', function (req, res) {
-    res.render('posts-index');
+app.get('/posts', function (req, res) {
+    res.render('posts-index', posts);
 });
 
 [
