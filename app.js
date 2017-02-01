@@ -1,6 +1,6 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
-//var post = require('../models/post.js');
+var post = require('../models/post.js');
 
 var app = express();
 
