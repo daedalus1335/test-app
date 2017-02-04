@@ -30,7 +30,6 @@
             </li>
         </div>
     </div>
-
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -38,15 +37,19 @@
     </form>
   </div>
 </nav>
-<h1>Make A Post</h1>
+<div class="row">
+    <div class="col-xs-12"
+        <h1>Make A Post</h1>
+    </div>
+</div>
     <form action='#' id='post-form'>
         <textarea id='post-body' name="body" class="form-control" required></textarea>
-        <div class='text-right'>
-            <button type='submit'>Submit</button>
-        </div>
+            <div class='text-right'>
+                <button type='submit'>Submit</button>
+            </div>
     </form>
     <div id="posts">
         {{#each posts}}
-            <div>{{body}}</div>
+        <div>{{body}}</div>
         {{/each}}
     </div>

@@ -7,7 +7,7 @@ $( document ).ready(function() {
       console.log( post );
       //console.log( $( this ).serialize() );
       $('#posts').prepend("<div>" + $("#post-body").val() + "</div>");
-      $ajax({url: "posts-index"})
+      //$ajax({url: "posts-index"})
     });
 
     $( "#post-form" ).validate();

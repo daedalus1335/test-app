@@ -19,6 +19,9 @@ app.get('/', function (req, res) {
 app.get('/posts', function (req, res) {
     var posts = []
     res.render('posts-index', {posts: posts});
+    //res.send('posts-index')
 });
 
 app.listen(process.env.PORT || 3000);
+
+//testing for github
