@@ -1,0 +1,17 @@
+CLIENT:
+User clicks 'submit'
+jQuery is 'listening' and detects this event
+Serialze form data, key value pairs
+Sends a POST request to the posts route
+
+SERVER
+Uses model to save new data
+IF the post saves, Respond with new post
+else respond with error
+
+CLIENT:
+if success: Append new post to list of posts.
+else error:
+
+
+Error handleing

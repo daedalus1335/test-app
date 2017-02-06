@@ -4,10 +4,19 @@ $( document ).ready(function() {
     //   alert( "Handler for .submit() called." );
       event.preventDefault();
       var post = ( $(this).serialize());
-      console.log( post );
       //console.log( $( this ).serialize() );
-      $('#posts').prepend("<div>" + $("#post-body").val() + "</div>");
-      //$ajax({url: "posts-index"})
+
+      $.ajax({
+          type: 'POST',
+          url: '/posts',
+          data: post,
+          success: function(data){
+              console.log("hey bro")
+              $('#posts').prepend("<div>" + data.body + "</div>");
+              // clear the form form[0].reset();
+              //$('#post-body')[0].reset();
+          }
+      });
     });
 
     $( "#post-form" ).validate();
