@@ -20,16 +20,22 @@ app.get('/', function (req, res) {
 
 app.get('/posts', function (req, res) {
     var posts = []
+    // TODO use Post.find() function
     res.render('posts-index', {posts: posts});
     //res.send('posts-index')
 });
 
 app.post('/posts', function (req, res) {
-    var posts = []
-    res.render('posts-index', {posts: posts});
+    var post = new Post(req.body);
+    post.save(function (err) {
+        // if (err) {return res.send('eeror!')}
+
+        res.send(post);
+    })
+    //res.render('posts-index', {posts: posts});
     //console.log(req.body)
     //res.send("ok")
-})
+});
 
 app.listen(process.env.PORT || 3000);
 
